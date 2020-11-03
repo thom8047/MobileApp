@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BrightenTheBrainApp.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#5A5A5A">
+
+            <Image  Source="BrightBeing"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="150"/>
+
+            <Label 
+                Text="  Sign Up"
+                Margin="20,40,20,20"
+                Font="Sans Serif"
+                TextColor="White"
+                HorizontalOptions="FillAndExpand"
+                FontSize="36" />
+
+            <Entry x:Name="NameEntry"
+                Placeholder="Enter Name"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="30"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,30,20,0"/>
+
+            <Entry x:Name="EmailEntry"
+                Placeholder="Enter Email"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="30"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,45,20,0"/>
+
+            <Entry x:Name="CodeEntry"
+                Placeholder="Enter Access Code"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="30"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,45,20,0"/>
+            
+            <Entry x:Name="MentorEntry"
+                Placeholder="Enter Mentor's Name"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="30"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,45,20,0"/>
+
+            <Button x:Name="LogInButton"
+                HeightRequest="100"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Font="Sans Serif"
+                FontSize="30"
+                Text="Submit"
+                    BackgroundColor="#2b2b2b"
+                    TextColor="White"
+                    Pressed="OnButtonPressedSignUp"
+                Released="OnButtonReleased1"
+                Margin="0,25,0,0" />
+
+            <Button  x:Name="BackButton" 
+                     HorizontalOptions="Start"
+                     VerticalOptions="EndAndExpand"
+                     HeightRequest="100"
+                     WidthRequest="140"
+                     BackgroundColor="#2b2b2b"
+                     TextColor="White"
+                     Font="Sans Serif"
+                     FontSize="32"
+                     Text="Back"
+                     Pressed="OnButtonPressedBack"
+                     Released="OnButtonReleasedBack"
+                     Margin="20,0,0,20"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

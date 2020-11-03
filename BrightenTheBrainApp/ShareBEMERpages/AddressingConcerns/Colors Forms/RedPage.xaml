@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BrightenTheBrainApp.RedPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#5A5A5A">
+
+            <ImageButton  Source="BrightBeing"
+                    x:Name="BrightBeingLogo"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="150"
+                Clicked="BrightBeingLogo_Clicked"/>
+
+            <SearchBar x:Name ="SearchEntry"
+                BackgroundColor="#646464"
+                       FontSize ="Title"
+                       FontFamily="Sans Serif"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Search Files"
+                       PlaceholderColor="LightGray"
+                       TextColor="White" 
+                       CancelButtonColor="White"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+
+            <Label
+                Text="Red"
+                Margin="0,0,0,20"
+                Font="Sans Serif"
+                TextColor="Black"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"
+                FontSize="36" 
+                HorizontalTextAlignment="Center" />
+
+            <Button x:Name="RedButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="WhiteSmoke"
+                    ImageSource="RedButton"
+                    TextColor="Black"
+                    Text="Red"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    BorderWidth="12"
+                    BorderColor="#339999"
+                    HeightRequest="110" 
+                    Margin="40,25,40,0"
+                    MinimumHeightRequest="60"
+                    Pressed="RedButton_Pressed"
+                    Released="RedButton_Released"/>
+
+
+            <Button  x:Name="BackButton" 
+                     HorizontalOptions="Start"
+                     VerticalOptions="EndAndExpand"
+                     HeightRequest="100"
+                     WidthRequest="140"
+                     BackgroundColor="#2b2b2b"
+                     TextColor="White"
+                     Font="Sans Serif"
+                     FontSize="32"
+                     Text="Back"
+                     Pressed="OnButtonPressedBack"
+                     Released="OnButtonReleasedBack"
+                     Margin="20,0,0,20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

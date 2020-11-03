@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BrightenTheBrainApp.DirectoryPage"
+             BackgroundColor="#5A5A5A"
+             BackgroundImageSource="FinalVer53">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image  Source="BrightBeing.jpg"
+                    x:Name="BrightBeingLogo"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="150"/>
+
+            <SearchBar x:Name ="SearchEntry"
+                BackgroundColor="#646464"
+                       FontSize ="Title"
+                       FontFamily="Sans Serif"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Search Files"
+                       PlaceholderColor="LightGray"
+                       TextColor="White" 
+                       CancelButtonColor="White"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed" 
+                       Margin="0,-10,0,0" />
+
+            <Button x:Name="AppointmentButton"
+                Font="Sans Serif"
+                FontSize="30"
+                HorizontalOptions="FillAndExpand" 
+                TextColor="Black"
+                Text="Appointment"
+                BackgroundColor="#E6E6E6"
+                    Margin="40,20,40,15"
+                    BorderColor="Black"
+                    BorderWidth="6"
+                    Pressed="AppointmentButton_Pressed"
+                    Released="AppointmentButton_Released"
+                    HeightRequest="110"/>
+
+            <Button x:Name="ShareBEMERButton"
+                Font="Sans Serif"
+                FontSize="30"
+                HorizontalOptions="FillAndExpand" 
+                TextColor="Black"
+                Text="Share BEMER"
+                BackgroundColor="#E6E6E6"
+                    Margin="40,15"
+                    BorderColor="Black"
+                    BorderWidth="6"
+                    HeightRequest="110"
+                    Pressed="ShareBEMERButton_Pressed"
+                    Released="ShareBEMERButton_Released"/>
+
+            <Button x:Name="SeniorButton"
+                Font="Sans Serif"
+                FontSize="30"
+                HorizontalOptions="FillAndExpand" 
+                TextColor="Black"
+                Text="Support Rep To Senior"
+                BackgroundColor="#E6E6E6"
+                    Margin="40,15"
+                    BorderColor="Black"
+                    BorderWidth="6"
+                    HeightRequest="110"
+                    Pressed="SeniorButton_Pressed"
+                    Released="SeniorButton_Released"/>
+
+            <!--Grid View with all of the buttons at the bottom-->
+
+            <Grid VerticalOptions="EndAndExpand">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Button x:Name="QSGButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="#2b2b2b"
+                    TextColor="White"
+                    Text="Quick Start Guide"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    HeightRequest="110" 
+                    Margin="10"
+                    MinimumHeightRequest="60"
+                    Pressed="QSGButton_Pressed"
+                    Released="QSGButton_Released"/>
+
+                <Button x:Name="AddConButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="#2b2b2b"
+                    TextColor="White"
+                    Text="Add Contact"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    HeightRequest="110" 
+                    Margin="10"
+                    MinimumHeightRequest="60"
+                    Pressed="AddConButton_Pressed"
+                    Released="AddConButton_Released"
+                        Grid.Row="1"/>
+
+                <Button x:Name="PresButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="#2b2b2b"
+                    TextColor="White"
+                    Text="Invite To Presentation"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                    HeightRequest="110" 
+                    Margin="10"
+                    MinimumHeightRequest="60"
+                    Pressed="PresButton_Pressed"
+                    Released="PresButton_Released"
+                        Grid.Column="1"/>
+
+                <Button x:Name="FilesButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="#2b2b2b"
+                    TextColor="White"
+                    Text="BEMER Files"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                    HeightRequest="110" 
+                    Margin="10"
+                    MinimumHeightRequest="60"
+                    Pressed="FilesButton_Pressed"
+                    Released="FilesButton_Released"
+                        Grid.Column="1"
+                        Grid.Row="1"/>
+
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

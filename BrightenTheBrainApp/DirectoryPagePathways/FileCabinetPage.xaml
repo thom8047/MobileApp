@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BrightenTheBrainApp.FileCabinetPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#5A5A5A">
+
+            <ImageButton  Source="BrightBeing"
+                    x:Name="BrightBeingLogo"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="150"
+                Clicked="BrightBeingLogo_Clicked"/>
+
+            <SearchBar x:Name ="SearchEntry"
+                BackgroundColor="#646464"
+                       FontSize ="Title"
+                       FontFamily="Sans Serif"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Search Files"
+                       PlaceholderColor="LightGray"
+                       TextColor="White" 
+                       CancelButtonColor="White"
+                       SearchButtonPressed="SearchEntry_SearchButtonPressed"/>
+
+
+            <Label
+                Text="File Cabinet"
+                Margin="0,0,0,20"
+                Font="Sans Serif"
+                TextColor="Black"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"
+                FontSize="36" 
+                HorizontalTextAlignment="Center" />
+            
+            <!-- Need to add File Cabinet Content -->
+
+            <Grid BackgroundColor="#efe4b0" Padding="5,3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.08*"/>
+                    <RowDefinition Height="0.08*"/>
+                    <RowDefinition Height="0.08*"/>
+                    <RowDefinition Height="0.08*"/>
+                    <RowDefinition Height="0.08*"/>
+                    <RowDefinition Height="0.08*"/>
+                </Grid.RowDefinitions>
+
+                <ImageButton x:Name="EducateButton"
+                        BackgroundColor="#efe4b0"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        Source="EducationDrawer.png"
+                             Aspect="AspectFit"
+                    CornerRadius="5"
+                    Margin="3"
+                        Grid.Row="0"
+                        Pressed="EducateButton_Pressed"/>
+
+                <ImageButton x:Name="DemoButton"
+                        BackgroundColor="#efe4b0"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        Source="DemoDrawer.png"
+                             Aspect="AspectFit"
+                    CornerRadius="5"
+                    Margin="3"
+                        Grid.Row="1"
+                        Pressed="DemoButton_Pressed"/>
+
+                <ImageButton x:Name="PresButton"
+                        BackgroundColor="#efe4b0"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        Source="PresDrawer.png"
+                             Aspect="AspectFit"
+                    CornerRadius="5"
+                    Margin="3"
+                        Grid.Row="2"
+                        Pressed="PresButton_Pressed"/>
+
+
+
+                <ImageButton x:Name="SalesButton"
+                        BackgroundColor="#efe4b0"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        Source="SalesDrawer.png"
+                             Aspect="AspectFit"
+                    CornerRadius="5"
+                    Margin="3"
+                        Grid.Row="3"
+                        Pressed="SalesButton_Pressed"/>
+
+                <ImageButton x:Name="PurchaseButton"
+                        BackgroundColor="#efe4b0"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        Source="PurRegDrawer.png"
+                             Aspect="AspectFit"
+                    CornerRadius="5"
+                    Margin="3"
+                        Grid.Row="4"
+                        Pressed="PurchaseButton_Pressed"/>
+
+                <ImageButton x:Name="IBDButton"
+                        BackgroundColor="#efe4b0"
+                        BorderWidth="6"
+                        BorderColor="LightGray"
+                    HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand"
+                        Source="IBDDrawer.png"
+                             Aspect="AspectFit"
+                    CornerRadius="5"
+                    Margin="3"
+                        Grid.Row="5"
+                        Pressed="IBDButton_Pressed"/>
+
+            </Grid>
+
+
+
+            <Button  x:Name="BackButton" 
+                     HorizontalOptions="Start"
+                     VerticalOptions="EndAndExpand"
+                     HeightRequest="100"
+                     WidthRequest="140"
+                     BackgroundColor="#2b2b2b"
+                     TextColor="White"
+                     Font="Sans Serif"
+                     FontSize="32"
+                     Text="Back"
+                     Pressed="OnButtonPressedBack"
+                     Released="OnButtonReleasedBack"
+                     Margin="20,0,0,20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

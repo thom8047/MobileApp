@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:BrightenTheBrainApp"
+             mc:Ignorable="d"
+             x:Class="BrightenTheBrainApp.MainPage">
+
+    <StackLayout  BackgroundColor="#5A5A5A">
+
+        <Image  Source="BrightBeing"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="150" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label 
+                Text="Log In or "
+                Margin="20,60,0,0"
+                TextColor="White"
+                FontSize="36" />
+
+            <Button x:Name="SignUpText"
+                Text="Sign Up"
+                FontAttributes="Italic"
+                TextColor="White"
+                FontSize="36"
+                BackgroundColor="Transparent"
+                    Grid.Column="1"
+                    VerticalOptions="End" 
+                    Margin="0,55,0,0"
+                    Clicked="SignUpText_Clicked"
+                    IsVisible="False"/>
+
+        </Grid>
+
+        <Entry x:Name="EmailEntry"
+                Placeholder="Enter Username"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,60,20,0"/>
+
+        <Entry x:Name="CodeEntry"
+                Placeholder="Enter Access Code"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,60,20,0"/>
+
+        <Button x:Name="LogInButton"
+                HeightRequest="100"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Font="Sans Serif"
+                FontSize="32"
+                Text="Submit"
+                    BackgroundColor="#2b2b2b"
+                    TextColor="White"
+                    Pressed="OnButtonPressedLog"
+                Released="OnButtonReleased1"
+                Margin="0,20,0,0" />
+
+    </StackLayout>
+
+</ContentPage>

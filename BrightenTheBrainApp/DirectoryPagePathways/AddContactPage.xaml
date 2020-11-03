@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BrightenTheBrainApp.AddContactPage">
+    <ContentPage.Content>
+        <StackLayout  BackgroundColor="#5A5A5A">
+
+            <ImageButton  Source="BrightBeing"
+                    x:Name="BrightBeingLogo"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="120"
+                Clicked="BrightBeingLogo_Clicked"/>
+
+            <Entry x:Name="NameEntry"
+                Placeholder="Name:"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,40,20,0"/>
+
+            <Entry x:Name="NumberEntry"
+                Placeholder="Phone Number:"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,30,20,0"/>
+
+            <Entry x:Name="EmailEntry"
+                Placeholder="Email:"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,30,20,0"/>
+
+            <Entry x:Name="AddressEntry"
+                Placeholder="Address:"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,30,20,0"/>
+
+            <Entry x:Name="GroupEntry"
+                Placeholder="Group:"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,30,20,0"/>
+
+            <Entry x:Name="PriorityEntry"
+                Placeholder="Priority:"
+                   PlaceholderColor="#AAAAAA"
+                VerticalOptions="Center" 
+                HorizontalOptions="FillAndExpand" 
+                FontSize="32"  
+                   TextColor="Black"
+                BackgroundColor="White"
+                MinimumHeightRequest="40"
+                HeightRequest="60" 
+                   Margin="20,30,20,0"/>
+
+            <Grid BackgroundColor="#C8C8C8" Margin="20,30,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="0.1*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="ActivationLabel"
+                       FontSize="32"
+                       Text="Activate Account?"/>
+
+                <Label x:Name="NoLabel"
+                       FontSize="32"
+                       Text="No"
+                       Grid.Column="1"/>
+
+                <Switch x:Name="ActivationSlider"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" 
+                Grid.Column="2"
+                ScaleX="3"
+                ScaleY="2" />
+
+                <Label x:Name="YesLabel"
+                       FontSize="32"
+                       Text="Yes"
+                       Grid.Column="3"/>
+
+            </Grid>
+
+            <Button x:Name="AddButton"
+                HeightRequest="100"
+                WidthRequest="200"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                Font="Sans Serif"
+                FontSize="32"
+                Text="Add Contact"
+                    BackgroundColor="#2b2b2b"
+                    TextColor="White"
+                    Pressed="AddButton_Pressed"
+                Released="AddButton_Released"
+                Margin="0,20,0,0" />
+            
+            
+            
+            <Button  x:Name="BackButton" 
+                     HorizontalOptions="Start"
+                     VerticalOptions="EndAndExpand"
+                     HeightRequest="100"
+                     WidthRequest="140"
+                     BackgroundColor="#2b2b2b"
+                     TextColor="White"
+                     Font="Sans Serif"
+                     FontSize="32"
+                     Text="Back"
+                     Pressed="OnButtonPressedBack"
+                     Released="OnButtonReleasedBack"
+                     Margin="20,0,0,20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

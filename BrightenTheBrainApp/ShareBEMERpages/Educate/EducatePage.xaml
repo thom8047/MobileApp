@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BrightenTheBrainApp.EducatePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#5A5A5A">
+
+            <ImageButton  Source="BrightBeing"
+                    x:Name="BrightBeingLogo"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="150"
+                Clicked="BrightBeingLogo_Clicked"/>
+
+            <SearchBar x:Name ="SearchEntry"
+                BackgroundColor="#646464"
+                       FontSize ="Title"
+                       FontFamily="Sans Serif"
+                       HorizontalOptions="FillAndExpand" 
+                       Placeholder="Search Files"
+                       PlaceholderColor="LightGray"
+                       TextColor="White" 
+                       CancelButtonColor="White"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+
+            <Label
+                Text="EDUCATE"
+                Margin="0,0,0,20"
+                Font="Sans Serif"
+                TextColor="Black"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"
+                FontSize="36" 
+                HorizontalTextAlignment="Center" />
+
+            <Button x:Name="DripsButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    Text="BEMER Drips"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    BorderWidth="12"
+                    BorderColor="#339999"
+                    HeightRequest="110" 
+                    Margin="40,25,40,0"
+                    MinimumHeightRequest="60"
+                    Pressed="DripsButton_Pressed"
+                    Released="DripsButton_Released"/>
+
+            <Button x:Name="TableBooksButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    Text="Coffee Table Book"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    BorderWidth="12"
+                    BorderColor="#339999"
+                    HeightRequest="110" 
+                    Margin="40,25,40,0"
+                    MinimumHeightRequest="60"
+                    Pressed="TableBooksButton_Pressed"
+                    Released="TableBooksButton_Released"/>
+
+            <Button x:Name="ResRusButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    Text="Results Resource"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    BorderWidth="12"
+                    BorderColor="#339999"
+                    HeightRequest="110" 
+                    Margin="40,25,40,0"
+                    MinimumHeightRequest="60"
+                    Pressed="ResRusButton_Pressed"
+                    Released="ResRusButton_Released"/>
+
+            <Button x:Name="OfferButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    Text="Offers"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    BorderWidth="12"
+                    BorderColor="#339999"
+                    HeightRequest="110" 
+                    Margin="40,25,40,0"
+                    MinimumHeightRequest="60"
+                    Pressed="OfferButton_Pressed"
+                    Released="OfferButton_Released"/>
+
+            <Button x:Name="FollowUpButton"
+                    Font="Sans Serif"
+                    FontSize="32"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    Text="Skill For Success - Follow Up/Service"
+                    HorizontalOptions="FillAndExpand" 
+                    CornerRadius="10"
+                    BorderWidth="12"
+                    BorderColor="#FF6633"
+                    HeightRequest="110" 
+                    Margin="40,25,40,0"
+                    MinimumHeightRequest="60"
+                    Pressed="FollowUpButton_Pressed"
+                    Released="FollowUpButton_Released"/>
+
+
+
+
+            <Button  x:Name="BackButton" 
+                     HorizontalOptions="Start"
+                     VerticalOptions="EndAndExpand"
+                     HeightRequest="100"
+                     WidthRequest="140"
+                     BackgroundColor="#2b2b2b"
+                     TextColor="White"
+                     Font="Sans Serif"
+                     FontSize="32"
+                     Text="Back"
+                     Pressed="OnButtonPressedBack"
+                     Released="OnButtonReleasedBack"
+                     Margin="20,5,0,20"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
