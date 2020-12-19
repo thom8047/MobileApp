@@ -1,7 +1,8 @@
 ﻿using System;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace BrightenTheBrainApp
 {
@@ -33,10 +34,11 @@ namespace BrightenTheBrainApp
             ConnectButton.BackgroundColor = Color.FromHex("#E1E1E1");
         }
 
-        private void ConnectButton_Released(object sender, EventArgs e)
+        private async void ConnectButton_Released(object sender, EventArgs e)
         {
             ConnectButton.BackgroundColor = Color.WhiteSmoke;
-            Device.OpenUri(new Uri("https://drive.google.com/file/d/1sri2_r80msBtzEpuNg0qFUs_Yq5eJyT0/view?usp=sharing"));
+            UrLComponent component = new UrLComponent();
+            await component.OpenURLAsync("https://drive.google.com/file/d/1sri2_r80msBtzEpuNg0qFUs_Yq5eJyT0/view?usp=sharing");
         }
 
         private void OfferButton_Pressed(object sender, EventArgs e)
@@ -44,10 +46,11 @@ namespace BrightenTheBrainApp
             OfferButton.BackgroundColor = Color.FromHex("#E1E1E1");
         }
 
-        private void OfferButton_Released(object sender, EventArgs e)
+        private async void OfferButton_Released(object sender, EventArgs e)
         {
             OfferButton.BackgroundColor = Color.WhiteSmoke;
-            Device.OpenUri(new Uri("https://drive.google.com/file/d/1Qontvsuo5h9kfkv_2-Dc38EcMmU1kqU9/view?usp=sharing"));
+            UrLComponent component = new UrLComponent();
+            await component.OpenURLAsync("https://drive.google.com/file/d/1Qontvsuo5h9kfkv_2-Dc38EcMmU1kqU9/view?usp=sharing");
         }
 
         private void FollowShortButton_Pressed(object sender, EventArgs e)

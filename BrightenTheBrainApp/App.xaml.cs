@@ -1,9 +1,20 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace BrightenTheBrainApp
 {
+    public class UrLComponent
+    {
+        public async Task OpenURLAsync(string url)
+        {
+            if (await Launcher.CanOpenAsync(url))
+                await Launcher.OpenAsync(url);
+        }
+    }
+
     public partial class App : Application
     {
         public App()
