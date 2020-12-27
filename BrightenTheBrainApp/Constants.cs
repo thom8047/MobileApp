@@ -11,7 +11,7 @@ namespace BrightenTheBrainApp
         // Google OAuth
         // For Google login, configure at https://console.developers.google.com/
         public static string GoogleiOSClientId = "<insert IOS client ID here>";
-        public static string GoogleAndroidClientId = "673213691698-5fgguoupq8r9q894nruunrh497tkt9im.apps.googleusercontent.com";
+        public static string GoogleAndroidClientId = "253029170781-laer3ln227c465t5gqe6i9i9gm473948.apps.googleusercontent.com";
 
         // These values do not need changing
         public static string GoogleScope = "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile";
@@ -21,7 +21,7 @@ namespace BrightenTheBrainApp
 
         // Set these to reversed iOS/Android client ids, with :/oauth2redirect appended
         public static string GoogleiOSRedirectUrl = "<insert IOS redirect URL here>:/oauth2redirect";
-        public static string GoogleAndroidRedirectUrl = "com.googleusercontent.apps.673213691698-5fgguoupq8r9q894nruunrh497tkt9im:/oauth2redirect";
+        public static string GoogleAndroidRedirectUrl = "com.googleusercontent.apps.253029170781-laer3ln227c465t5gqe6i9i9gm473948:/oauth2redirect";
 
         //-------------------------------------------------------------------------------------------------------
 

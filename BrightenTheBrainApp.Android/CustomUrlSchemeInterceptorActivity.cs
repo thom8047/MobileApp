@@ -11,7 +11,7 @@ namespace BrightenTheBrainApp.Droid
     [IntentFilter(
         new[] { Intent.ActionView },
         Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
-        DataSchemes = new[] { "com.googleusercontent.apps.673213691698-5fgguoupq8r9q894nruunrh497tkt9im" },
+        DataSchemes = new[] { "com.googleusercontent.apps.253029170781-laer3ln227c465t5gqe6i9i9gm473948" },
         DataPath = "/oauth2redirect")]
     public class CustomUrlSchemeInterceptorActivity : Activity
     {
