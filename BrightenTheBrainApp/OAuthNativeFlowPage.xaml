@@ -2,15 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:BrightenTheBrainApp" x:Class="BrightenTheBrainApp.OAuthNativeFlowPage">
     <StackLayout VerticalOptions="Center">
 
+        <Image  Source="BrightBeing"
+                HeightRequest="180"
+                BackgroundColor="#232323"
+                Aspect="AspectFit" 
+                MinimumHeightRequest="150" />
+        
         <ImageButton Source="GoogleLogo.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     Clicked="OnGoogleLoginClicked" />
 
-        <ImageButton Source="FacebookLogo.png"
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"
-                    Clicked="OnFacebookLoginClicked" />
 
     </StackLayout>
 
