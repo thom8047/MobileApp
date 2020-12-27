@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 
+//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace BrightenTheBrainApp
 {
     public class UrLComponent
@@ -21,7 +22,9 @@ namespace BrightenTheBrainApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new OAuthNativeFlowPage());
+
+            //MainPage = new MainPage();
         }
 
         protected override void OnStart()
