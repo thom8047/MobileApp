@@ -3,10 +3,9 @@
     <StackLayout VerticalOptions="Center">
 
         <Image  Source="BrightBeing"
-                HeightRequest="180"
-                BackgroundColor="#232323"
-                Aspect="AspectFit" 
-                MinimumHeightRequest="150" />
+                HorizontalOptions="Center"
+                VerticalOptions="StartAndExpand"
+                Aspect="AspectFit"  />
         
         <ImageButton Source="GoogleLogo.png"
                     HorizontalOptions="Center"
