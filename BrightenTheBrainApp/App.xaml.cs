@@ -7,15 +7,7 @@ using Xamarin.Essentials;
 //[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace BrightenTheBrainApp
 {
-    public class UrLComponent
-    {
-        public async Task OpenURLAsync(string url)
-        {
-            if (await Launcher.CanOpenAsync(url))
-                await Launcher.OpenAsync(url);
-        }
-    }
-
+    
     public partial class App : Application
     {
         public App()
@@ -42,4 +34,13 @@ namespace BrightenTheBrainApp
             // Handle when your app resumes
         }
     }
+    public class UrLComponent
+    {
+        public async Task OpenURLAsync(string url)
+        {
+            if (await Launcher.CanOpenAsync(url))
+                await Launcher.OpenAsync(url);
+        }
+    }
+
 }
