@@ -113,6 +113,10 @@ namespace BrightenTheBrainApp
 
             if (e.IsAuthenticated)
             {
+
+                DirectoryPage directorypage = new DirectoryPage(); //Creates an instance of the DirectoryPage form called "directorypage"
+                Navigation.PushModalAsync(directorypage); //Opens new DirectoryPage using the name "directorypage"
+                /*
                 User user = null;
 
                 // If the user is authenticated, request their basic user data from Google
@@ -148,7 +152,7 @@ namespace BrightenTheBrainApp
                 Application.Current.Properties.Add("EmailAddress", user.Email);
                 Application.Current.Properties.Add("ProfilePicture", user.Picture);
 
-                await Navigation.PushAsync(new ProfilePage());
+                await Navigation.PushAsync(new ProfilePage()); */
 
             }
         }
