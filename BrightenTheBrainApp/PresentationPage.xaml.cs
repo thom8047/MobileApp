@@ -47,7 +47,8 @@ namespace BrightenTheBrainApp
         private void OnPresButton_Released(object sender, EventArgs e)
         {
             OnPresButton.BackgroundColor = Color.WhiteSmoke;
-            Device.OpenUri(new Uri("https://drive.google.com/file/d/1qzie652WtRrNDVS1tPkx6_PizeYjDEbc/view?usp=sharing")); 
+            OpenBrowser Browser = new OpenBrowser();
+            Browser.Open(new Uri("https://drive.google.com/file/d/1qzie652WtRrNDVS1tPkx6_PizeYjDEbc/view?usp=sharing")); 
         }
 
         private void ResultsButton_Pressed(object sender, EventArgs e)

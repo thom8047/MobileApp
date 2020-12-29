@@ -6,7 +6,7 @@ namespace BrightenTheBrainApp
 {
     public static class Constants
     {
-        public static string AppName = "OAuthNativeFlow";
+        public static string AppName = "BrightenTheBrainApp";
 
         // Google OAuth
         // For Google login, configure at https://console.developers.google.com/

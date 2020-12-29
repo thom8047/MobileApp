@@ -16,16 +16,6 @@
                 MinimumHeightRequest="150"
                 Clicked="BrightBeingLogo_Clicked"/>
 
-            <SearchBar x:Name ="SearchEntry"
-                BackgroundColor="#646464"
-                       FontSize ="Title"
-                       FontFamily="Sans Serif"
-                       HorizontalOptions="FillAndExpand" 
-                       Placeholder="Search Files"
-                       PlaceholderColor="LightGray"
-                       TextColor="White" 
-                       CancelButtonColor="White"
-                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
 
             <Label
                 Text="Share BEMER"
