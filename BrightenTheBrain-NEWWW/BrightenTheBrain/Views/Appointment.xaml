@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrightenTheBrain.Views.Appointment"
+             BackgroundImageSource="SunRise"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout x:Name="AppStack">
+            <Image  Source="BrightenBeing.PNG"
+                HeightRequest="-1"
+                BackgroundColor="#232323"
+                Aspect="AspectFit"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
